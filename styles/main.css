@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Helvetica;
+    margin-left: auto;
+    margin-right: auto;
+}
+.landing{
+    height: 800px;
+    background-image: url(/images/image01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.landing > .title-1{
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 8px 8px 4px #000000;
+    
+}
+.landing p{
+    position: absolute;
+    margin: 286px 0 0 68px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 16px;
+    background-color: rgba(114, 153, 254, 0.5);
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px #4E8DBA;
+}
+
+/* Seccion Sobremi */
+.sobremi{
+    height: 480px;
+    background-color: #7299FE;
+}
+.sobremi .t2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 36px 0 0 0;
+}
+.sobremi > .r1{
+    width: 80%;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #f8f8f8;
+    padding: 30px 0 0 0 ;
+    font-family: 'Source Serif Pro', serif;
+     
+}
+.sobremi > .bt{
+    text-decoration: none;
+    padding: 18px 55px;
+    position: absolute;
+    margin-top: 1%;
+    margin-left:10%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background: #D16FFF;
+    border-radius: 20px;
+    border: none;
+    opacity: 0.7;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.bt:hover {opacity: 1}
+/* Seccion Skills */
+.bs{
+    background: #9122FF;
+}
+.bs > .skills{
+    width: 80%;
+    height: 424px;
+    color: white;
+    padding:50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4em;
+    grid-row-gap: 1em;                      
+}
+.bs > .skills > .t3{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 36px 0 0 0;
+    grid-column: span 2;
+}
+
+.skills li p{
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+
+/*Animacion Sckills*/
+
+.skill {
+    list-style-type: none;
+  }
+   
+.progress {
+    position: relative;
+    width: 400px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress .mark {
+    position: absolute;
+    left:-60%;
+    top: 0;
+    background: #57EFF9;
+    width: 100%;
+    height:20px;
+  }
+  
+  .progress:hover .mark {
+    animation: progress 2s linear ;
+  }
+  
+   @keyframes progress {
+    from { 
+      left: -60%;
+    }
+    to { 
+      left: 0%;
+    }
+   }
+   
+
+/* Seccion Portafolio */
+.bp{
+    background: #FFD233;
+}
+.portafolio{
+    text-align: center;
+    width: 605px;
+    height: 424px;
+}
+.portafolio> .t4{
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    padding-top: 37px;
+}   
+.imga{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap:1em;
+}
+.imgb{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap:1em;    
+}
+.portafolio img{
+    width: 140px;
+}
+
+.img-port:hover {
+    transform: scale(2);
+    transition: all 2s linear;
+  }
+
+/* Seccion Clientes */
+.bc{
+    background: #3F4E62;
+}
+.clientes{
+    width: 850px;
+    height: 458px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.clientes .t5{
+    grid-column: span 4;
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    padding-top: 37px;
+}
+.clientes img{
+    width: 200px;
+}
+
+.img-cli:hover {
+    transform: scale(1.3);
+    transition: all 2s linear;
+  }
+/* Seccion Contacto */
+.f-color{
+    background: #1687A0;
+}
+.contacto{
+    width: 800px;
+}
+.contacto .t6{
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    padding-top: 37px;
+}
+.form{
+    margin-top:27px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap:2em;
+}
+input:required{
+    border: 1px solid red;
+}
+input:valid {
+    border: 1px solid green;
+}
+textarea:required{
+    border: 1px solid red;
+}
+textarea:valid {
+    border: 1px solid green;
+}
+/*Contacto*/
+.name{
+    padding: 20px 10px;
+    width: 368px;
+}
+.addres{
+    padding: 20px 10px;
+    width: 368px;
+}
+.email{
+    padding: 20px 10px;
+    width: 368px;
+}
+.tel{
+    padding: 20px 10px;
+    width: 368px;
+}
+
+.message{
+    width: 100%;
+    height: 115px;
+    padding: 20px 10px;
+    grid-column: span 2;
+    color: darkgray;
+}
+.check input{
+    margin: 0 5px;
+}
+
+.button-enviar{
+    width: 167px;
+    height: 56px;
+    text-align: center;
+    grid-column: span 2;
+    font-size: 18px;
+    color: #fff;
+    background: #233451;
+    border: none;
+    margin-bottom: 76px;
+    cursor: pointer;
+}
+
+.button-enviar:hover {
+    transform: scale(1.3);
+    transition: all 2s linear;
+  }
+  
